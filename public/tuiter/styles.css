@@ -68,7 +68,7 @@
 .wd-image-container {
     position: relative;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .wd-image-container img {

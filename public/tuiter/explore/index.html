@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>Explore-Bootstrap</title>
+</head>
+
+<body>
+
+    <div class="continer">
+        <div class="row">
+            <!-- left column Navigation bar -->
+            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+                <div class="left-navigation-column">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="../home.html">
+                            <i class="fas fa-home"></i>
+                            <span class="d-none d-xl-inline">Home</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action active" href="index.html">
+                            <i class="fas fa-hashtag"></i>
+                            <span class="d-none d-xl-inline">Explore</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="../notifications.html">
+                            <i class="fas fa-bell"></i>
+                            <span class="d-none d-xl-inline">Notifications</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="../messages.html">
+                            <i class="fas fa-envelope"></i>
+                            <span class="d-none d-xl-inline">Messages</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="../bookmarks.html">
+                            <i class="fas fa-bookmark"></i>
+                            <span class="d-none d-xl-inline">Bookmarks</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="../lists.html">
+                            <i class="fas fa-list"></i>
+                            <span class="d-none d-xl-inline">Lists</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="../profile.html">
+                            <i class="fas fa-user"></i>
+                            <span class="d-none d-xl-inline">Profiles</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="">
+                            <i class="fas fa-ghost"></i>
+                            <span class="d-none d-xl-inline">More</span>
+                        </a>
+                        </ul>
+                        <button
+                            class="btn btn-primary rounded-pill d-flex align-items-center justify-content-center">Tuit</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- middle column Main Content Column -->
+            <div class="col-9  col-lg-7 col-xl-6">
+                <div class="main-content-column">
+                    <!-- Search Field -->
+                    <div class="input-group mt-2 search-field">
+                        <span class="fas fa-search form-control-feedback">
+                        </span>
+                        <input type="text" class="form-control rounded-pill" placeholder="Search Tuit">
+                        <!-- gear icon -->
+                        <div class="input-group-append">
+                            <button class="btn btn-primary wd-gear-button" type="button">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- tabs -->
+                    <div class="mt-3">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-items">
+                                <a href="#" class="nav-link active" aria-current="page">For you</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-none d-md-block" href="#">Entertainment</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- main image -->
+                    <div class="wd-image-container">
+                        <img src="../img/profilePhoto.jpeg" alt="">
+                        <h2 class="wd-image-heading">Ai Haibara</h2>
+                    </div>
+                    <!-- list of tuits -->
+                    <div wd-tuits-list>
+                        <ul class="list-group">
+                            <!-- First tuit -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-9 col-xl-10 tuit-text-column">
+                                        <div class="tuit-topic">
+                                            <span>Comics</span>
+                                        </div>
+                                        <div class="wd-tuiter">
+                                            <span>Doraemon</span>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="tuit-time-tonow">-2h</span>
+                                        </div>
+                                        <div class="tuit-content-text">
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore
+                                                doloremquecumque hic! </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-xl-2 tuit-image-column">
+                                        <div class="tuit-image-container">
+                                            <img src="../img/profilePhone02.png" class="tuit-image" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Second Tuit -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-9 col-xl-10 tuit-text-column">
+                                        <div class="tuit-topic">
+                                            <span>Comics</span>
+                                        </div>
+                                        <div class="wd-tuiter">
+                                            <span>Spiderwoman</span>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="tuit-time-tonow">-20h</span>
+                                        </div>
+                                        <div class="tuit-content-text">
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore
+                                                doloremquecumque hic! </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-xl-2 tuit-image-column">
+                                        <div class="tuit-image-container">
+                                            <img src="../img/gwen.jpeg" class="tuit-image" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Third Tuit -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-9 col-xl-10 tuit-text-column">
+                                        <div class="tuit-topic">
+                                            <span>Web Development</span>
+                                        </div>
+                                        <div class="wd-tuiter">
+                                            <span>Java</span>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="tuit-time-tonow">-1d</span>
+                                        </div>
+                                        <div class="tuit-content-text">
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore
+                                                doloremquecumque hic! </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-xl-2 tuit-image-column">
+                                        <div class="tuit-image-container">
+                                            <img src="../img/java_sample.png" class="tuit-image" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Forth Tuit -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-9 col-xl-10 tuit-text-column">
+                                        <div class="tuit-topic">
+                                            <span>Web Development</span>
+                                        </div>
+                                        <div class="wd-tuiter">
+                                            <span>JavaScript</span>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="tuit-time-tonow">-4h</span>
+                                        </div>
+                                        <div class="tuit-content-text">
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore
+                                                doloremquecumque hic! </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-xl-2 tuit-image-column">
+                                        <div class="tuit-image-container">
+                                            <img src="../img/js_sample.png" class="tuit-image" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right column who to follow -->
+            <div class="col-lg-4 col-xl-4 d-none d-lg-block">
+                <div class="follow-left-column">
+                    <!-- first tuiter -->
+                    <ul class="list-group">
+                        <li class="list-group-item left-column-title">Who to follow</li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div>
+                                        <div class="wd-tuit-profile-avatar">
+                                            <img src="../img/profilePhone02.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7 d-flex flex-wrap">
+                                    <div class="wd-tuiter d-inline-flex align-items-center">
+                                        <span>Doraemooooon</span>
+                                        <i class="fas fa-check-circle ms-1"></i>
+                                    </div>
+                                    <span> @Dora-Fujio</span>
+                                </div>
+
+                                <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-primary rounded-pill left-follow-button">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- second tuiter -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div>
+                                        <div class="wd-tuit-profile-avatar">
+                                            <img src="../img/gwen.jpeg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7 d-flex flex-wrap">
+                                    <div class="wd-tuiter d-inline-flex align-items-center">
+                                        <span>Spiderwoooman</span>
+                                        <i class="fas fa-check-circle ms-1"></i>
+                                    </div>
+                                    <span> @gwen-Stacy</span>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-primary rounded-pill left-follow-button">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- third tuiter -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div>
+                                        <div class="wd-tuit-profile-avatar">
+                                            <img src="../img/js_sample.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="wd-tuiter">
+                                        <span>JavaScript</span>
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <span> @jsjsjs</span>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-primary rounded-pill left-follow-button">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Forth tuiter -->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div>
+                                        <div class="wd-tuit-profile-avatar">
+                                            <img src="../img/google_sample.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="wd-tuiter">
+                                        <span>Goooogle</span>
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <span> @Goooogle</span>
+                                </div>
+                                <div class="col-lg-4 col-xl-3 d-flex align-items-center justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-primary rounded-pill left-follow-button">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
