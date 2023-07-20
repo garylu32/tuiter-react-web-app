@@ -1,0 +1,135 @@
+.wd-return-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.wd-return-icon {
+    display: flex;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.wd-all-bookmarks {
+    flex: 1;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* tuit section */
+.wd-tuit-section {
+    margin: 0;
+    padding: 12px;
+    list-style-type: none;
+}
+
+.wd-tuit-list {
+    border: 1px solid lightgray;
+    padding: 12px;
+    margin-left: 12px;
+}
+
+.wd-tuit-container {
+    display: flex;
+    margin-top: 12px;
+    position: relative;
+}
+
+.wd-tuit-profile-avatar {
+    margin: 12px;
+}
+
+.wd-tuit-profile-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-tuit-content-grid {
+    padding: 0 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-tuit-content {
+    flex-grow: 1;
+    padding: 12px;
+}
+
+.wd-tuit-username {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wd-tuit-text-content {
+    margin-right: 12px;
+}
+
+.wd-tuit-user-handle {
+    color: darkgray;
+}
+
+/* bookmark style */
+.wd-tuit-bookmark {
+    margin-right: 12px;
+    margin-top: 12px;
+    padding: 0;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wd-tuit-bookmark-content {
+    padding: 12px;
+}
+
+.wd-tuit-bookmark img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wd-tuit-bookmark-text {
+    color: darkgray;
+}
+
+/* bottom bar style */
+.wd-tuit-content-grid ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+    padding: 0;
+    color: gray;
+}
+
+.wd-tuit-content-grid ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.wd-tuit-content-grid ul li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wd-tuit-content-grid ul li p span {
+    margin-left: 12px;
+}
+
+.wd-tuit-bookmark-options {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.wd-tuit-bookmark-options i {
+    color: gray;
+    font-size: 16px;
+    padding: 8px;
+}

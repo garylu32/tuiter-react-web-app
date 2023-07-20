@@ -1,0 +1,74 @@
+.left-navigation-column {
+    padding: 8px;
+}
+
+.left-navigation-column button {
+    margin-top: 8px;
+}
+
+.left-navigation-column .nav-item a {
+    color: black;
+}
+
+.main-content-column {
+    padding: 8px;
+}
+
+.search-field .form-control {
+    padding-left: 3rem;
+}
+
+.search-field .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: black;
+}
+
+.wd-gear-button {
+    margin-left: 8px;
+}
+
+.tuit-topic {
+    color: gray;
+}
+
+.tuit-time-tonow {
+    color: gray;
+    font-weight: lighter;
+}
+
+.wd-tuiter {
+    font-weight: bold;
+}
+
+.tuit-content-text {
+    font-weight: bold;
+}
+
+.tuit-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.follow-left-column {
+    padding: 8px;
+}
+
+.left-column-title {
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wd-tuit-profile-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
