@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {createTuit} from "./reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 import {BsEmojiSmile} from "react-icons/bs";
 import {TbCalendarStats} from "react-icons/tb";
@@ -16,13 +16,13 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   }
   return (
       <div className="row">
         <div className="col-1">
-          <img src={require(`../images/nasa.png`)} width={60}/>
+          <img src={require(`../images/nasa.png`)} width={60} alt=""/>
         </div>
         <div className="col-11">
           <textarea value={whatsHappening} placeholder="What's happening?"

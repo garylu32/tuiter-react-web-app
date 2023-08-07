@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import TuitStatsItem from "./tuit-stats";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +21,7 @@ const TuitListItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
 
   return(
@@ -34,7 +34,7 @@ const TuitListItem = (
             <div>
               <RiCloseLine className="float-end"
                  onClick={() => deleteTuitHandler(tuit._id)} />
-              <div><span className="fw-bolder me-1">{tuit.userName}</span><FontAwesomeIcon icon={faCircleCheck} style={{ color: 'dodgerblue' }} /> {tuit.handle} . {tuit.time}</div>
+              <div><span className="fw-bolder me-1">{tuit.username}</span><FontAwesomeIcon icon={faCircleCheck} style={{ color: 'dodgerblue' }} /> {tuit.handle} . {tuit.time}</div>
               <div>{tuit.tuit}</div>
               <div><TuitStatsItem tuit={tuit} /></div>
             </div>
