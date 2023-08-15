@@ -1,18 +1,29 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const NavigationSidebar = () => {
+function NavigationSidebar() {
   const { pathname } =useLocation();
-  const [ignore, tuiter, active] = pathname.split("/");
-  const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
+  const [ignore, active] = pathname.split("/");
+  const { currentUser } = useSelector((state) => state.user);
+  const isLinkActive = (linkPath) => {
+    return pathname.startsWith(linkPath);
+  };
 
   return (
     <div className="list-group">
-      {links.map((link) =>
-        <Link to={`/tuiter/${link}`} className={`list-group-item text-capitalize ${active === link ? "active" : ""}`}>
-          {link}
-        </Link>
-      )}
+      <Link className={`list-group-item ${isLinkActive("/tuiter/home") ? "active" : ""}`}
+            to="/tuiter/home"> Home </Link>
+      <Link className={`list-group-item ${isLinkActive("/tuiter/explore") ? "active" : ""}`}
+            to="/tuiter/explore"> Explore </Link>
+      <Link className={`list-group-item ${isLinkActive("/tuiter/notifications") ? "active" : ""}`}
+            to="/tuiter/notifications"> Notifications </Link>
+      {!currentUser && <Link className={`list-group-item ${isLinkActive("/tuiter/login") ? "active" : ""}`}
+            to="/tuiter/login"> Login </Link>}
+      {!currentUser && <Link className={`list-group-item ${isLinkActive("/tuiter/register") ? "active" : ""}`}
+                             to="/tuiter/register"> Register </Link>}
+      { currentUser && <Link className={`list-group-item ${isLinkActive("/tuiter/profile") ? "active" : ""}`}
+                             to="/tuiter/profile"> Profile </Link>}
     </div>
   );
 };
